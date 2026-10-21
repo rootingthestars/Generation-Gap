@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#183b30">
+  <title>Generation Gap — Orchestral Soundtrack</title>
+  <style>
+    :root { color-scheme: light; }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      padding: 24px;
+      background: #f7f3e8;
+      color: #183b30;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+    main {
+      width: min(100%, 620px);
+      padding: clamp(24px, 5vw, 42px);
+      border: 1px solid #d7dfce;
+      border-radius: 22px;
+      background: #fffdf6;
+      box-shadow: 0 14px 42px rgb(24 59 48 / 8%);
+    }
+    .eyebrow {
+      margin: 0 0 12px;
+      color: #55765b;
+      font-size: .75rem;
+      font-weight: 800;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+    }
+    h1 {
+      margin: 0;
+      font-size: clamp(1.9rem, 6vw, 3.1rem);
+      line-height: 1.05;
+      letter-spacing: -.04em;
+    }
+    .subtitle {
+      margin: 12px 0 26px;
+      color: #557064;
+      line-height: 1.6;
+    }
+    .player {
+      padding: 18px;
+      border-radius: 15px;
+      background: #eaf0e3;
+    }
+    .track-title { margin: 0 0 12px; font-weight: 750; }
+    audio { display: block; width: 100%; }
+    .fallback { margin: 12px 0 0; font-size: .9rem; }
+    a { color: #245d43; text-underline-offset: 3px; }
+    .back { display: inline-block; margin-top: 24px; font-weight: 700; }
+    footer { margin-top: 28px; color: #718276; font-size: .82rem; }
+  </style>
+</head>
+<body>
+  <main>
+    <p class="eyebrow">Generation Gap · Original soundtrack</p>
+    <h1>The Botanical Overture</h1>
+    <p class="subtitle">The orchestral soundtrack inspired by <em>Generation Gap</em>, an interactive game about the plant life cycle.</p>
+    <section class="player" aria-label="Audio player">
+      <p class="track-title">Listen to the orchestral version</p>
+      <audio controls preload="metadata">
+        <source src="generation-gap-orchestral.mp3" type="audio/mpeg">
+        Your browser does not support the audio player.
+      </audio>
+      <p class="fallback">Having trouble playing it? <a href="generation-gap-orchestral.mp3">Open the MP3 directly</a>.</p>
+    </section>
+    <a class="back" href="./">← Back to the game</a>
+    <footer>Created by Charles Shi · Royal Botanic Gardens, Kew</footer>
+  </main>
+</body>
+</html>
